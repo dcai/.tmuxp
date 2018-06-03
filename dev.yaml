@@ -1,0 +1,22 @@
+session_name: dev
+start_directory: '~'
+windows:
+- window_name: ops
+  layout: tiled
+  panes:
+  - shell_command:
+    - cd /var/log
+    - ls -al | grep \.log
+  - shell_command:
+    - htop
+    start_directory: /var/log
+  - echo ok
+- window_name: editor
+  focus: true
+  layout: main-horizontal
+  options:
+    automatic-rename: true
+  panes:
+  - focus: true
+    shell_command:
+    - echo ok
