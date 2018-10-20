@@ -3,20 +3,20 @@ windows:
 - window_name: lrn-watchers
   layout: tiled
   shell_command_before:
-    - cd ~/salt-developer/code
+  - cd ~/salt-developer/code
   panes:
-    - shell_command:           # author
-        - cd api/author
-        - vgbuild watch
-    - shell_command:           # assess
-        - cd api/assess
-        - vgbuild watch
-    - shell_command:           # items
-        - cd api/items
-        - vgbuild watch
-    - shell_command:           # QE
-        - cd api/questioneditor
-        - vgbuild watch
+  - shell_command:           # author
+    - cd api/author
+    - vgbuild watch
+  - shell_command:           # assess
+    - cd api/assess
+    - vgbuild watch
+  - shell_command:           # items
+    - cd api/items
+    - vgbuild watch
+  - shell_command:           # QE
+    - cd api/questioneditor
+    - vgbuild watch
 - window_name: cmd
   panes:
-    - echo cmd window
+  - echo cmd window
