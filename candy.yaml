@@ -1,0 +1,20 @@
+session_name: candy
+
+windows:
+  - window_name: server
+    layout: tiled
+    shell_command_before:
+      - cd /workspace
+    panes:
+      - shell_command:
+          - cd ui-candy
+          - npm start
+      - shell_command:
+          - echo -n
+      - shell_command:
+          - cd swagger-editor
+          - python -m SimpleHTTPServer 3010
+
+  - window_name: candy
+    panes:
+      - shell_command: cd /workspace/ui-candy

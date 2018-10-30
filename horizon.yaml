@@ -1,0 +1,25 @@
+session_name: horizon
+
+windows:
+  - window_name: node
+    layout: tiled
+    shell_command_before:
+      - cd /workspace # run as a first command in all panes
+    panes:
+      - shell_command:
+          - cd exp-horizon-core
+          - env WDP_CLI_THEME=compact env WDP_CLI_NO_LOG_SOURCE=1 npm start local
+      - shell_command:
+          - cd exp-horizon-upload
+          - env WDP_CLI_THEME=compact env WDP_CLI_NO_LOG_SOURCE=1 npm start local
+      - shell_command:
+          - cd ui-horizon
+          - npm start nomockserver
+      - shell_command:
+          - cd swagger-editor
+          - python -m SimpleHTTPServer 3010
+          # - python3 -m http.server 3010
+
+  - window_name: horizon
+    panes:
+      - shell_command: cd /workspace/ui-horizon
