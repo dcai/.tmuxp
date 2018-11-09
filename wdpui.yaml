@@ -1,4 +1,4 @@
-session_name: candy
+session_name: wdpui
 
 windows:
   - window_name: server
@@ -7,14 +7,15 @@ windows:
       - cd /workspace
     panes:
       - shell_command:
-          - cd ui-candy
-          - npm start
+          - cd swagger-editor
+          - python -m SimpleHTTPServer 3010
+      - shell_command:
+          - cd ~
       - shell_command:
           - echo -n
       - shell_command:
-          - cd swagger-editor
-          - python -m SimpleHTTPServer 3010
+          - echo -n
 
-  - window_name: candy
+  - window_name: dev
     panes:
-      - shell_command: cd /workspace/ui-candy
+      - shell_command: cd ~
