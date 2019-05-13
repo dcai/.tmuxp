@@ -17,5 +17,6 @@ windows:
           - echo -n
 
   - window_name: dev
+    focus: true
     panes:
       - shell_command: cd ~
