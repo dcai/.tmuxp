@@ -1,0 +1,23 @@
+session_name: ops-${USER}
+start_directory: "~"
+windows:
+  - window_name: watch
+    options:
+      automatic-rename: true
+    layout: tiled
+    panes:
+      - shell_command:
+          - htop
+        start_directory: /var/log
+      - shell_command:
+          - cd /var/log
+          - ls -al | grep \.log
+      - echo hello
+  - window_name: ops
+    options:
+      automatic-rename: true
+    focus: true
+    layout: main-horizontal
+    panes:
+      - shell_command:
+          - cd ~/airnotifier
