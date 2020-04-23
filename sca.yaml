@@ -1,0 +1,15 @@
+session_name: sca
+start_directory: ~/sca
+
+windows:
+  - window_name: watch
+    layout: tiled
+    panes:
+      - shell_command:
+          - cd bello-user-feed
+      - shell_command:
+          - cd bello-api-gateway
+  - window_name: editor
+    focus: true
+    panes:
+      - echo

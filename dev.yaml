@@ -1,4 +1,4 @@
-session_name: dev-${USER}
+session_name: dev
 start_directory: "~"
 windows:
   - window_name: watch
@@ -7,13 +7,9 @@ windows:
     layout: tiled
     panes:
       - shell_command:
-          - htop
-        start_directory: /var/log
+          - echo
       - shell_command:
-          - cd /var/log
-          - ls -al | grep \.log
-      - echo hello
-      -  # blank pane
+          - ls
   - window_name: editor
     options:
       automatic-rename: true
@@ -21,5 +17,3 @@ windows:
     layout: main-horizontal
     panes:
       - focus: true
-        shell_command:
-          - echo ok
