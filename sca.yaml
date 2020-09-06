@@ -1,3 +1,4 @@
+---
 session_name: sca
 start_directory: ~/sca
 
@@ -6,9 +7,9 @@ windows:
     layout: tiled
     panes:
       - shell_command:
-          - cd bello-user-feed
+          - cd pcone-xl-user-feed
       - shell_command:
-          - cd bello-api-gateway
+          - cd pcone-xl-api
   - window_name: editor
     focus: true
     panes:

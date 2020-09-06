@@ -1,0 +1,20 @@
+session_name: tux
+start_directory: "~"
+windows:
+  - window_name: watch
+    options:
+      automatic-rename: true
+    panes:
+      - shell_command:
+          - ytop
+        focus: true
+      - shell_command:
+          - watch -t -c -n 1200 ansiweather -l 'qingdao,china'
+      - focus: true
+  - window_name: ops
+    options:
+      automatic-rename: true
+    layout: main-horizontal
+    panes:
+      - blank
+      - blank
