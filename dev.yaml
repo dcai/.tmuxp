@@ -1,19 +1,21 @@
 session_name: dev
-start_directory: "~"
+start_directory: "~/src"
 windows:
   - window_name: watch
+    focus: true
     options:
       automatic-rename: true
     layout: tiled
     panes:
-      - shell_command:
-          - echo
-      - shell_command:
-          - ls
+      - blank
+      - blank
+      - blank
+      - blank
   - window_name: editor
     options:
       automatic-rename: true
-    focus: true
-    layout: main-horizontal
+    layout: main-vertical
     panes:
-      - focus: true
+      - blank
+      - blank
+      - blank
