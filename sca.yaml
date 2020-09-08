@@ -6,11 +6,11 @@ windows:
   - window_name: watch
     layout: tiled
     panes:
-      - shell_command:
-          - cd pcone-xl-user-feed
-      - shell_command:
-          - cd pcone-xl-api
+      - shell_command: cd pcone-xl-user-feed
+        focus: true
+      - shell_command: cd pcone-xl-api
+      - blank
+      - blank
   - window_name: editor
-    focus: true
     panes:
-      - echo
+      - blank
