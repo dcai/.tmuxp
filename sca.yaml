@@ -10,7 +10,6 @@ windows:
         focus: true
       - shell_command: cd pcone-xl-api
       - blank
-      - blank
   - window_name: editor
     panes:
       - blank
