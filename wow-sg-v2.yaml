@@ -1,0 +1,14 @@
+---
+session_name: wow-scan-and-go-v2
+start_directory: ~/wow/svc-api-wow-scan-go-v2
+
+windows:
+  - window_name: watch
+    layout: tiled
+    panes:
+      - shell_command: npm run local
+        focus: true
+      - shell_command: npm run test -- --watch
+  - window_name: editor
+    panes:
+      - blank
