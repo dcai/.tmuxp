@@ -4,7 +4,7 @@ start_directory: ~/wow/svc-api-wow-scan-go-v1
 
 windows:
   - window_name: watch
-    layout: tiled
+    layout: main-horizontal
     panes:
       - shell_command: npm run local
         focus: true
