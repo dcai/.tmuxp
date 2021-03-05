@@ -4,9 +4,9 @@ start_directory: ~/wow/svc-api-wow-scan-go-v2
 
 windows:
   - window_name: watch
-    layout: main-horizontal
+    layout: main-vertical
     panes:
-      - shell_command: npm run local
+      - shell_command: npm run dev
         focus: true
       - shell_command: npm run test -- --watch
   - window_name: editor
