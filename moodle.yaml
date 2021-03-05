@@ -8,11 +8,7 @@ windows:
       automatic-rename: true
     layout: main-vertical
     panes:
+      - vim config.php
       - php -S '0.0.0.0:8080'
       - blank
-  - window_name: editor
-    options:
-      automatic-rename: true
-    layout: main-vertical
-    panes:
-      - vim index.php
+      - blank
