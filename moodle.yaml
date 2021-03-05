@@ -2,7 +2,7 @@ session_name: moodle
 start_directory: "~/moodle"
 
 windows:
-  - window_name: watch
+  - window_name: main
     focus: true
     options:
       automatic-rename: true
