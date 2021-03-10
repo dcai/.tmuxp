@@ -6,9 +6,11 @@ windows:
   - window_name: watch
     layout: main-vertical
     panes:
+      - shell_command: vim app/app.js
       - shell_command: npm run dev
         focus: true
-      - shell_command: npm run test -- --watch
+      - shell_command: npm run test:watch
+      - shell_command: cd coverage/lcov-report; python3 -m http.server 8082 --bind 0.0.0.0
   - window_name: editor
     panes:
       - blank
