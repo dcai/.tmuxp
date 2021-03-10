@@ -1,6 +1,7 @@
 session_name: dev
 start_directory: "~/src"
-
+environment:
+  NODE_ENV: development
 windows:
   - window_name: watch
     focus: true
@@ -8,5 +9,4 @@ windows:
       automatic-rename: true
     layout: main-vertical
     panes:
-      - blank
-      - blank
+      - focus: true

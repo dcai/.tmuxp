@@ -1,5 +1,7 @@
 session_name: moodle
 start_directory: "~/moodle"
+environment:
+  NODE_ENV: development
 
 windows:
   - window_name: main

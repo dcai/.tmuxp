@@ -1,6 +1,8 @@
 ---
 session_name: wow-scan-and-go-v1
 start_directory: ~/wow/svc-api-wow-scan-go-v1
+environment:
+  NODE_ENV: development
 
 windows:
   - window_name: watch
